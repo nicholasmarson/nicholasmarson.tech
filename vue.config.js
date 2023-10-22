@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   publicPath: "/",
-  outDir: "docs",
+  outputDir: "docs",
   chainWebpack: (config) => {
     // Add a rule for handling PDF files
     config.module
