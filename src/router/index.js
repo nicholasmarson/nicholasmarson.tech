@@ -15,6 +15,10 @@ const routes = [
     path: '/resume',
     name: 'resume',
     component: () => import('../views/ResumeView.vue')
+  },
+  {
+    path: '/:catchAll(.*)',
+    redirect: { name: 'home' }
   }
 ]
 
