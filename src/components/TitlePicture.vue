@@ -61,7 +61,7 @@ export default {
 }
 
 #portrait {
-  width: 100%;
+  width: 100px;
   height: auto;
 }
 
