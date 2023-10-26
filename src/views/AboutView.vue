@@ -40,6 +40,12 @@ export default {
 
 #footer-container {
   height: 10%;
+  position: fixed;
+  bottom: 0;
+}
+
+#desktop-footer-comp {
+  display: none;
 }
 
 
