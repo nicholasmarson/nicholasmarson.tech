@@ -30,6 +30,10 @@ export default {
   flex-direction: column;
 }
 
+#desktop-footer-comp {
+  display: none;
+}
+
 #header-comp {
   height: 30%;
 }
@@ -44,9 +48,7 @@ export default {
   bottom: 0;
 }
 
-#desktop-footer-comp {
-  display: none;
-}
+
 
 
 @media (min-width: 429px) and (min-height: 927px) {
