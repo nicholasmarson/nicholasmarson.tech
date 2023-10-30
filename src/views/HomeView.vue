@@ -53,9 +53,6 @@ export default {
 }
 
 
-
-
-
 @media (min-width: 429px) and (min-height: 927px) {
 #home-view {
   height: 100vh;
@@ -79,6 +76,25 @@ export default {
 #portrait {
   height: 100px;
   margin: 5px;
+}
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+#desktop-footer-comp {
+  display: none;
+}
+
+#header-comp { 
+  height: 30%;
+}
+
+#greeting-message {
+  height: 40%;
+}
+
+#footer-container {
+  height: 10%;
+  position: fixed;
 }
 }
 </style>
