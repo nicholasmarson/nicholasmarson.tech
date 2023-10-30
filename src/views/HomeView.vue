@@ -81,7 +81,7 @@ export default {
 }
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
+@media screen and (min-height: calc(100vh - constant(safe-area-inset-bottom))) {
 #desktop-footer-comp {
   display: none;
 }
@@ -91,12 +91,13 @@ export default {
 }
 
 #greeting-message {
-  height: 40%;
+  height: 60%;
 }
 
 #footer-container {
   height: 10%;
   position: fixed;
+  bottom: 0;
 }
 }
 </style>
