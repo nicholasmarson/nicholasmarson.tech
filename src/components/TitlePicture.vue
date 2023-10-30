@@ -39,7 +39,7 @@ export default {
   border-color: rgb(0, 0, 0);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   height: auto;
-  width: 190px;
+  width: 40%;
   margin-top: 15px;
 }
 
@@ -50,7 +50,7 @@ export default {
   color: black;
   text-decoration: underline;
   padding-top: 10px;
-  margin-bottom: 26px;
+  padding-bottom: 26px;
 }
 
 @media (min-width: 429px) and (min-height: 927px) {

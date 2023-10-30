@@ -37,6 +37,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -44,6 +46,7 @@ body {
   scroll-behavior: smooth;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  flex: 1;
 }
 
 .router-link-active {
