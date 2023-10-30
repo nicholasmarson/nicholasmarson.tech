@@ -14,9 +14,11 @@ import HeaderComp from '@/components/HeaderComp.vue'
 import Greeting from '@/components/Greeting.vue'
 import FooterComp from '@/components/FooterComp.vue'
 import DesktopFooterComp from '@/components/DesktopFooterComp.vue'
+import adjustContentHeightMixin from '@/adjustContentHeightMixin'
 
 export default {
   name: 'HomeView',
+  mixins: [adjustContentHeightMixin],
   components: {
     HeaderComp,
     Greeting,
