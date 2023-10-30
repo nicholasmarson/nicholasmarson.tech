@@ -19,6 +19,9 @@ import adjustContentHeightMixin from '@/adjustContentHeightMixin'
 export default {
   name: 'HomeView',
   mixins: [adjustContentHeightMixin],
+  mounted() {
+    this.$el.style.heught = window.innerHeight / 2 + 'px';
+  },
   components: {
     HeaderComp,
     Greeting,
