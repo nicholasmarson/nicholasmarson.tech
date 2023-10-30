@@ -29,16 +29,21 @@ export default {
   text-align: center;
   color: #2c3e50;
   width: 100vw;
-  height: 100vw;
+  height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 body {
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
   scroll-behavior: smooth;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .router-link-active {

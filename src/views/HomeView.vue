@@ -17,8 +17,12 @@ import DesktopFooterComp from '@/components/DesktopFooterComp.vue'
 
 export default {
   name: 'HomeView',
-  mounted() {
-    this.$el.style.height = window.innerHeight / 2 + 'px';
+  data() {
+    let vh = window.innerHeight * 0.01;
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    })
   },
   components: {
     HeaderComp,
@@ -32,6 +36,7 @@ export default {
 <style>
 #home-view {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   display: flex;
   flex-direction: column;
