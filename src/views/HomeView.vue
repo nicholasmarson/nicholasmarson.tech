@@ -17,7 +17,7 @@ import DesktopFooterComp from '@/components/DesktopFooterComp.vue'
 
 export default {
   name: 'HomeView',
-  data() {
+  created() {
     let vh = window.innerHeight * 0.01;
     window.addEventListener('resize', () => {
       let vh = window.innerHeight * 0.01;
@@ -36,7 +36,6 @@ export default {
 <style>
 #home-view {
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -51,7 +50,7 @@ export default {
 }
 
 #greeting-message {
-  height: 60%;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 #footer-container {
