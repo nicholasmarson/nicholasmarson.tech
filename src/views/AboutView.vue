@@ -12,10 +12,8 @@ import HeaderComp from "@/components/HeaderComp.vue";
 import FooterComp from "@/components/FooterComp.vue";
 import AboutMe from '@/components/AboutMe.vue';
 import DesktopFooterComp from '@/components/DesktopFooterComp.vue';
-import adjustContentHeightMixin from "@/adjustContentHeightMixin";
 
 export default {
-  mixins: [adjustContentHeightMixin],
   components: {
     HeaderComp,
     FooterComp,

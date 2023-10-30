@@ -14,13 +14,11 @@ import HeaderComp from '@/components/HeaderComp.vue'
 import Greeting from '@/components/Greeting.vue'
 import FooterComp from '@/components/FooterComp.vue'
 import DesktopFooterComp from '@/components/DesktopFooterComp.vue'
-import adjustContentHeightMixin from '@/adjustContentHeightMixin'
 
 export default {
   name: 'HomeView',
-  mixins: [adjustContentHeightMixin],
   mounted() {
-    this.$el.style.heught = window.innerHeight / 2 + 'px';
+    this.$el.style.height = window.innerHeight / 2 + 'px';
   },
   components: {
     HeaderComp,
@@ -81,26 +79,6 @@ export default {
 #portrait {
   height: 100px;
   margin: 5px;
-}
-}
-
-@media screen and (min-height: calc(100vh - constant(safe-area-inset-bottom))) {
-#desktop-footer-comp {
-  display: none;
-}
-
-#header-comp { 
-  height: 30%;
-}
-
-#greeting-message {
-  height: 60%;
-}
-
-#footer-container {
-  height: 10%;
-  position: fixed;
-  bottom: 0;
 }
 }
 </style>
