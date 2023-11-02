@@ -29,11 +29,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   width: 100vw;
-  height: 100dvh;
+  height: 100svh;
 }
 
 html {
-  height: 100dvh;
+  height: 100svh;
 }
 
 body {
@@ -44,7 +44,7 @@ body {
   padding: 0;
   overflow: hidden;
   scroll-behavior: smooth;
-  min-height: 100dvh;
+  min-height: 100svh;
   flex: 1;
 }
 
