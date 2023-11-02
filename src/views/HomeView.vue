@@ -35,7 +35,7 @@ export default {
 
 <style>
 #home-view {
-  height: 100dvh;
+  height: 95dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
