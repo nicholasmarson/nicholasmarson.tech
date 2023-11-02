@@ -25,7 +25,7 @@ export default {
 
 <style>
 #about-view {
-  height: 95dvh;
+  height: 100dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
