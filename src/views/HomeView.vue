@@ -46,15 +46,15 @@ export default {
 }
 
 #header-comp {
-  height: 30%;
+  height: 30svh;
 }
 
 #greeting-message {
-  height: calc(var(--vh, 1vh) * 100);
+  height: 60svh;
 }
 
 #footer-container {
-  height: 10%;
+  height: 10svh;
   position: fixed;
   bottom: 0;
 }
