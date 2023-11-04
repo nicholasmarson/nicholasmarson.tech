@@ -36,15 +36,15 @@ export default {
 }
 
 #header-comp {
-  height: 30%;
+  height: 30svh;
 }
 
 #about-me {
-  height: 60%;
+  height: 60svh;
 }
 
 #footer-container {
-  height: 10%;
+  height: 10svh;
   position: fixed;
   bottom: 0;
 }
