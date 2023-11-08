@@ -15,7 +15,7 @@
       </li>
       <li>
         <a
-          href="https://github.com/nicholasmarson/nicholas-marson-resume"
+          href="https://github.com/nicholasmarson/nicholasmarson.github.io"
           class="dropdown-option"
           >Source Code</a
         >

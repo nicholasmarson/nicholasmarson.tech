@@ -36,7 +36,7 @@
                   <a href="https://github.com/nicholasmarson" class="dropdown-option">Github</a>
                 </li>
                 <li class="dropdown-option">
-                  <a href="https://github.com/nicholasmarson/nicholas-marson-resume" class="dropdown-option">Source Code</a>
+                  <a href="https://github.com/nicholasmarson/nicholasmarson.github.io" class="dropdown-option">Source Code</a>
                 </li>
             </ul>
           </a>

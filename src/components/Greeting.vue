@@ -10,11 +10,13 @@ export default {
     data() {
         return {
             greetingMessage: 
-            `Hello! Thank you for finding my interactive resume.
+            `Hello! Welcome to my portfolio.
 
             This is an ever-growing project and it's purpose is to display and put to practice my development skills. It will be constantly worked on so the state it's in will vary.
             
-            I have just finished the mobile/desktop view differences. I'm either getting ready to deploy, or just finished deploying!
+            This is a Vue.js 3 project. I have just finished the desktop/mobile reactivity, and finally deployed!
+            
+            I am currently working on a guestbook component that will store form submissions in a database.
             
             I hope you enjoy!`
         }
