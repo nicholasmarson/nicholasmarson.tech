@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/nicholasmarson.github.io_backend.props" />
-</Project>
