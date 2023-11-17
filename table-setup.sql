@@ -1,0 +1,15 @@
+-- -- Create a new table called '[TableName]' in schema '[dbo]'
+-- -- Drop the table if it already exists
+-- IF OBJECT_ID('[dbo].[GuestBook]', 'U') IS NOT NULL
+-- DROP TABLE [dbo].[GuestBook]
+-- GO
+-- -- Create the table in the specified schema
+-- CREATE TABLE [dbo].[GuestBook]
+-- (
+--     [entry_id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, -- Auto-incrementing primary key column
+--     [guest_name] NVARCHAR(50) NOT NULL,
+--     [guest_message_entry] NVARCHAR(50) NOT NULL,
+--     [entry_date_time] DATETIME NOT NULL
+--     -- Specify more columns here
+-- );
+-- GO
