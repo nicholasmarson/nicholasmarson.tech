@@ -1,5 +1,5 @@
 <template>
-  <div id="footer-container">
+  <div class="mobile-footer">
     <nav id="nav-bar">
       <ul>
         <li>
@@ -21,23 +21,38 @@
           </a>
         </li>
         <li>
-          <a
-            id="menu-link"
-            @click="toggleDropdown"
-            style="cursor: pointer"
-          >
+          <a id="menu-link" @click="toggleDropdown" style="cursor: pointer">
             <img src="../assets/icons8-menu-50(3).png" id="menu" />
             <p class="icon-text">More</p>
             <ul v-if="isDropdownOpen" class="dropdown-menu">
-                <li class="dropdown-option">
-                  <a href="https://www.linkedin.com/in/nicholasmarson/" class="dropdown-option">LinkedIn</a>
-                </li>
-                <li class="dropdown-option">
-                  <a href="https://github.com/nicholasmarson" class="dropdown-option">Github</a>
-                </li>
-                <li class="dropdown-option">
-                  <a href="https://github.com/nicholasmarson/nicholasmarson.github.io" class="dropdown-option">Source Code</a>
-                </li>
+              <li class="dropdown-option">
+                <a
+                  href="https://www.linkedin.com/in/nicholasmarson/"
+                  class="dropdown-option"
+                  >LinkedIn</a
+                >
+              </li>
+              <li class="dropdown-option">
+                <a
+                  href="https://github.com/nicholasmarson"
+                  class="dropdown-option"
+                  >Github</a
+                >
+              </li>
+              <li class="dropdown-option">
+                <a
+                  href="https://github.com/nicholasmarson/nicholasmarson.github.io"
+                  class="dropdown-option"
+                  >Source Code</a
+                >
+              </li>
+              <li class="dropdown-option">
+                <router-link
+                  v-bind:to="{ name: 'guestbookform' }"
+                  class="dropdown-option"
+                  >Guestbook</router-link
+                >
+              </li>
             </ul>
           </a>
         </li>
@@ -82,22 +97,6 @@ img {
 
 img:hover {
   cursor: pointer;
-}
-
-#footer-container {
-  width: 100%;
-  background-color: #31b8fc;
-  background: linear-gradient(to bottom, #3498db, #2980b9);
-  border-top: 2px;
-  border-top-style: solid;
-  border-top-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0%;
-  padding: 0%;
-  position: relative;
-  height: 10vh;
 }
 
 nav {
@@ -178,8 +177,8 @@ a {
 }
 
 @media (min-width: 429px) and (min-height: 927px) {
-#footer-container {
-  display: none;
-}
+  #footer-container {
+    display: none;
+  }
 }
 </style>

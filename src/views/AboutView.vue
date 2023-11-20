@@ -1,5 +1,5 @@
 <template>
-<div id="about-view">
+<div class="page-view">
   <header-comp />
   <about-me />
   <footer-comp />
@@ -24,13 +24,6 @@ export default {
 </script>
 
 <style>
-#about-view {
-  height: 100svh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-
 #desktop-footer-comp {
   display: none;
 }

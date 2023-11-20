@@ -17,6 +17,16 @@ const routes = [
     component: () => import('../views/ResumeView.vue')
   },
   {
+    path: '/guestbookform',
+    name: 'guestbookform',
+    component: () => import('../views/GuestbookFormView.vue')
+  },
+  {
+    path: '/guestbookentries',
+    name: 'guestbookentries',
+    component: () => import('../views/GuestbookEntriesView.vue')
+  },
+  {
     path: '/:catchAll(.*)',
     redirect: { name: 'home' }
   }

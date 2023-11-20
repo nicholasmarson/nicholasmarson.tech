@@ -1,5 +1,5 @@
 <template>
-<div id="home-view">
+<div class="page-view">
   <header-comp/>
   <greeting />
   <footer-comp />
@@ -34,13 +34,6 @@ export default {
 </script>
 
 <style>
-#home-view {
-  height: 100svh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-
 #desktop-footer-comp {
   display: none;
 }
