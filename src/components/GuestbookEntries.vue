@@ -16,62 +16,19 @@
 </template>
 
 <script>
+import GuestbookService from "../services/GuestbookService";
 export default {
   name: "ViewGuestBookEntries",
   data() {
     return {
-      entries: [
-        {
-          id: 1,
-          name: "Nicholas Marson",
-          message: "This is a test message.",
-          date: "2021-01-01",
-        },
-        {
-          id: 2,
-          name: "Nicholas Marson",
-          message: "This is a test message",
-          date: "2021-01-01",
-        },
-        {
-          id: 3,
-          name: "Nicholas Marson",
-          message: "This is a test message",
-          date: "2021-01-01",
-        },
-        {
-          id: 4,
-          name: "Nicholas Marson",
-          message: "This is a test message",
-          date: "2021-01-01",
-        },
-        {
-          id: 5,
-          name: "Nicholas Marson",
-          message: "This is a test message",
-          date: "2021-01-01",
-        },
-        {
-          id: 6,
-          name: "Nicholas Marson",
-          message: "This is a test message",
-          date: "2021-01-01",
-        },
-        {
-          id: 7,
-          name: "Nicholas Marson",
-          message: "This is a test message",
-          date: "2021-01-01",
-        },
-        {
-          id: 8,
-          name: "Nicholas Marson",
-          message: "This is a test message",
-          date: "2021-01-01",
-        },
-      ],
-    };
+      entries: [],
+    }
   },
+  created() {
+    GuestbookService.getEntries().then((response) => {
+      this.entries = response.data;
+    });
+  }
 };
 </script>
 

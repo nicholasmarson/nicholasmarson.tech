@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import axios from "axios";
+import GuestbookService from "../services/GuestbookService";
 export default {
   name: "GuestbookForm",
 
@@ -39,6 +41,9 @@ export default {
         message: this.message,
         date: this.date,
       };
+      GuestbookService.postEntry(guestBookEntry).then((response) => {
+        console.log(response);
+      });
     },
   },
 };
