@@ -30,6 +30,7 @@ export default {
     font-size: 24px;
     padding: 10px;
     overflow: auto;
+    height: 99%;
 }
 
 #greeting-message-text {

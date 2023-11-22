@@ -1,13 +1,13 @@
 import axios from 'axios';
 
 const http = axios.create({
-    baseURL: 'http://localhost:5004/api',
+    baseURL: 'http://localhost:5226/api/Guestbook',
 });
 export default {
-    fetchGuestbooks() {
-        return http.get('/guestbooks');
+    getGuestbookEntries() {
+        return http.get('');
     },
-    addGuestbook(entry) {
-        return http.post('/guestbooks', entry);
+    addGuestbookEntry(entry) {
+        return http.post('', entry);
     },
 }

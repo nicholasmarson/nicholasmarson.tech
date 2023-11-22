@@ -1,7 +1,7 @@
 <template>
     <div>
       <div class="entry" v-for="entry in entries" :key="entry.id">
-        <span id="name">{{ entry.name }} | {{ entry.date }}</span>
+        <span id="name">{{ entry.name }} | {{ formatDate(entry.date) }}</span>
         <br />
         <span id="message">{{ entry.message }}</span>
         <br />
@@ -24,8 +24,14 @@ export default {
       entries: [],
     }
   },
+  methods: {
+    formatDate(date) {
+      const options = { year: "numeric", month: "long", day: "numeric" };
+      return new Date(date).toLocaleDateString(undefined, options);
+    },
+  },
   created() {
-    GuestbookService.getEntries().then((response) => {
+    GuestbookService.getGuestbookEntries().then((response) => {
       this.entries = response.data;
     });
   }
@@ -52,12 +58,14 @@ export default {
   width: 100%; /* Set to 100% of the parent container width */
   margin-bottom: 10px; /* Add margin between entries */
   word-wrap: break-word;
-    white-space: pre-line;
+  white-space: pre-line;
+  padding: 20px; /* Add padding inside the entry block */
+  box-sizing: border-box; /* Include padding and border in the total width and height */
 }
 
 #name {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin-bottom: 1px;
 }
 

@@ -117,4 +117,24 @@ body {
   padding: 10px;
   margin-bottom: 10px;
 }
+
+.button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 429px) and (min-height: 927px) {
+#picture-name-container {
+  padding: 0;
+  margin: 5px;
+}
+
+#portrait {
+  height: 100px;
+  margin: 5px;
+}
+
+.mobile-footer {
+  display: none;
+}
+}
 </style>

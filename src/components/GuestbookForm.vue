@@ -8,11 +8,8 @@
     <label for="message">Message: </label>
     <textarea id="message" v-model="message"></textarea>
 
-    <label for="date">Date: </label>
-    <input type="date" id="date" v-model="date" />
-
     <div id="guestbook-nav">
-    <button class="button" @click.prevent="submitEntry">Submit</button>
+    <button class="button" @click="submitEntry">Submit</button>
     <button class="button">
     <router-link v-bind:to="{ name: 'guestbookentries' }">View Guestbook Entries</router-link>
     </button>
@@ -22,7 +19,6 @@
 </template>
 
 <script>
-import axios from "axios";
 import GuestbookService from "../services/GuestbookService";
 export default {
   name: "GuestbookForm",
@@ -31,7 +27,6 @@ export default {
     return {
       name: "",
       message: "",
-      date: "",
     };
   },
   methods: {
@@ -39,10 +34,10 @@ export default {
       const guestBookEntry = {
         name: this.name,
         message: this.message,
-        date: this.date,
       };
-      GuestbookService.postEntry(guestBookEntry).then((response) => {
+      GuestbookService.addGuestbookEntry(guestBookEntry).then((response) => {
         console.log(response);
+        this.$router.push({ name: "guestbookentries" });
       });
     },
   },
